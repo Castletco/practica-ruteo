@@ -1,5 +1,5 @@
 <template>
   <div class="hello">
-    <h1>Componente Restaurant</h1>
+    <h1>About NombreRestoran</h1>
   </div>
 </template>

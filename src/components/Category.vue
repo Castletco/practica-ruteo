@@ -1,5 +1,5 @@
 <template>
   <div class="hello">
-    <h1>Componente Categoría</h1>
+    <h1>List of FastFood restaurants</h1>
   </div>
 </template>
