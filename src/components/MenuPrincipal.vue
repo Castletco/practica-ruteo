@@ -3,39 +3,18 @@
     <h1>Welcome To Dojo Reviews</h1>
     <img alt="Goku Eating" src="../assets/gokuEating.png">
     <ul>
-      <li @mouseover="redClass()">Thai</li>
-      <li @mouseover="redClass()">American</li>
-      <li @mouseover="redClass()">vegetarian</li>
-      <li @mouseover="redClass()">burguers</li>
-      <li @mouseover="redClass()">food</li>
-      <li @mouseover="redClass()">tasty</li>
-      <li @mouseover="redClass()">drinks</li>
-    </ul>
-    <ul>
-      <li @mouseover="redClass()">Cocktails</li>
-      <li @mouseover="redClass()">Ethiopian</li>
-      <li @mouseover="redClass()">Indian</li>
-      <li @mouseover="redClass()">salad</li>
-      <li @mouseover="redClass()">Mexican</li>
-      <li @mouseover="redClass()">italian</li>
-      <li @mouseover="redClass()">milkshakes</li>
-    </ul>
-    <ul>
-      <li @mouseover="redClass()">barbecue</li>
-      <li @mouseover="redClass()">Chinese</li>
-      <li @mouseover="redClass()">French</li>
-      <li @mouseover="redClass()">sushi</li>
-      <li @mouseover="redClass()">poutine</li>
-      <li @mouseover="redClass()">fresh</li>
-      <li @mouseover="redClass()">vegan</li>
-      <li @mouseover="redClass()">kosher</li>
+      <li v-for="(item, index) in store.properties.restaurant" :key="index">{{item}}</li>
     </ul>
   </div>
 </template>
 
 <script>
+import store from '@/store.js';
 export default {
   name: 'MenuPrincipal',
+  data() {
+    return {store};
+  },
   methods: {
     redClass() {
       console.log('entró');
