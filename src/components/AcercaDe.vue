@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <router-link v-bind:to="{ path: '/' }">About</router-link>
-    <router-link v-bind:to="{ path: `/restoran/${local}` }">{{local}}</router-link>
-    <router-link v-bind:to="{ path: 'images/'}">Photos</router-link>
+    <router-link v-bind:to="{ name: 'reviews' }">Review</router-link>
+    <router-link v-bind:to="{ name: 'images'}">Photos</router-link>
     <p>
         Don't worry about making an specific text here
         Lorem Ipsum is fine.
