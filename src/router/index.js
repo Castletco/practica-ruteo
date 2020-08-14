@@ -31,15 +31,17 @@ export default new VueRouter({
             component: Login
         },
         {
-            path: '/:placeName', 
+            path: '/restaurant/:placeName', 
             component: AcercaDe
         },
         {
-            path: '/:placeName/reviews', 
+            path: '/restaurant/:placeName/reviews',
+            name: 'reviews',
             component: Revisiones
         },
         {
-            path: '/:placeName/images', 
+            path: '/restaurant/:placeName/images', 
+            name: 'images',
             component: Imagenes
         },
         {

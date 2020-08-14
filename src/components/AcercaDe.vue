@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>About</h1>
+    <router-link v-bind:to="{ path: '/' }">About</router-link>
+    <router-link v-bind:to="{ path: `/restoran/${local}` }">{{local}}</router-link>
+    <router-link v-bind:to="{ path: 'images/'}">Photos</router-link>
     <p>
         Don't worry about making an specific text here
         Lorem Ipsum is fine.
@@ -10,5 +12,6 @@
         incididunt ut labore et dolore magma alicua. Ut
         enim ad minim veniam, quis nostrud
     </p>
+    <router-view />
   </div>
 </template>

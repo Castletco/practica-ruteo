@@ -3,8 +3,10 @@
     <h1>Welcome To Dojo Reviews</h1>
     <img alt="Goku Eating" src="../assets/gokuEating.png">
     <ul>
-      <li v-for="(item, index) in store.properties.restaurant" :key="index">{{item}}</li>
-    </ul>
+      <li v-for="(item, index) in store.properties.restaurant" :key="index">
+        <router-link v-bind:to="{ path: '/restaurant/' + item }">{{item}}</router-link>
+      </li>
+    </ul>    
   </div>
 </template>
 
